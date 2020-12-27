@@ -1,73 +1,69 @@
 import React, { Component } from 'react';
-
+import { Card, Nav, CardDeck } from 'react-bootstrap';
 
 class Project extends Component {
-    constructor(props) {
-        super(props);
-        this.state = { activeTab: 0 };
-    }
-
-    toggleCategories() {
-        if (this.state.activeTab === 0) {
-            return (
-                <div>
-                    <a href="https://github.com/AuroraBrune/cocktail_coterie">GitHub</a>
-                    <a href="https://cocktail-coterie.herokuapp.com/">Live Demo</a>
-                </div>
-            )
-        } else if (this.state.activeTab === 1) {
-            return (
-                <div>
-                    <a href="https://github.com/petersvirtualservices/WeatherAPI">GitHub</a>
-                    <a href="https://petersvirtualservices.github.io/WeatherAPI/">Live Demo</a>
-                </div>
-            )
-        } else if (this.state.activeTab === 2) {
-            return (
-                <div>
-                    <a href="https://github.com/petersvirtualservices/WeatherAPI">GitHub</a>
-                    <a href="https://petersvirtualservices.github.io/WeatherAPI/">Live Demo</a>
-                </div >
-            )
-        } else if (this.state.activeTab === 3) {
-            return (
-                <div>
-
-                    <a href="https://github.com/petersvirtualservices/WeatherAPI">GitHub</a>
-                    <a href="https://petersvirtualservices.github.io/WeatherAPI/">Live Demo</a>
-
-                </div>
-            )
-        } else if (this.state.activeTab === 4) {
-            return (
-                <div>
-
-                    <a href="https://github.com/petersvirtualservices/WeatherAPI">GitHub</a>
-                    <a href="https://petersvirtualservices.github.io/WeatherAPI/">Live Demo</a>
-
-                </div>
-            )
-        } else if (this.state.activeTab === 5) {
-            return (
-                <div>
-
-                    <a href="https://github.com/petersvirtualservices/WeatherAPI">GitHub</a>
-                    <a href="https://petersvirtualservices.github.io/WeatherAPI/">Live Demo</a>
-
-                </div>
-            )
-        } else if (this.state.activeTab === 6) {
-            return (
-                <div>
-
-                    <a href="https://github.com/petersvirtualservices/WeatherAPI">GitHub</a>
-                    <a href="https://petersvirtualservices.github.io/WeatherAPI/">Live Demo</a>
-
-                </div>
-            )
-
-        }
-    }
-};
-
-export default Project;
+    render() {
+        return (
+            <div>
+                <br /><br />
+            <Card>
+                <Card.Header>
+                    <Nav variant="tabs" defaultActiveKey="#first">
+                        <Nav.Item>
+                            <Nav.Link href="#KansasUniversityAssignments">Kansas University Assignments</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link href="#PostKU">Post Kansas University Projects</Nav.Link>
+                        </Nav.Item>
+                    </Nav>
+                </Card.Header>
+                <Card.Body variant="KansasUniversityAssignments">
+                <CardDeck>
+  <Card>
+    <Card.Img variant="top" src="holder.js/100px160" />
+    <Card.Body>
+      <Card.Title>Card title</Card.Title>
+      <Card.Text>
+        This is a wider card with supporting text below as a natural lead-in to
+        additional content. This content is a little bit longer.
+      </Card.Text>
+    </Card.Body>
+    <Card.Footer>
+      <small className="text-muted">Last updated 3 mins ago</small>
+    </Card.Footer>
+  </Card>
+  <Card>
+    <Card.Img variant="top" src="holder.js/100px160" />
+    <Card.Body>
+      <Card.Title>Card title</Card.Title>
+      <Card.Text>
+        This card has supporting text below as a natural lead-in to additional
+        content.{' '}
+      </Card.Text>
+    </Card.Body>
+    <Card.Footer>
+      <small className="text-muted">Last updated 3 mins ago</small>
+    </Card.Footer>
+  </Card>
+  <Card>
+    <Card.Img variant="top" src="holder.js/100px160" />
+    <Card.Body>
+      <Card.Title>Card title</Card.Title>
+      <Card.Text>
+        This is a wider card with supporting text below as a natural lead-in to
+        additional content. This card has even longer content than the first to
+        show that equal height action.
+      </Card.Text>
+    </Card.Body>
+    <Card.Footer>
+      <small className="text-muted">Last updated 3 mins ago</small>
+    </Card.Footer>
+  </Card>
+</CardDeck>
+                </Card.Body>
+            </Card>
+            </div>
+        )
+    };
+}
+    export default Project;

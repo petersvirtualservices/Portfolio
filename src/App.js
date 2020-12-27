@@ -1,27 +1,32 @@
 import './assets/css/App.css';
-import 'react-mdl/extra/material.css';   
-import 'react-mdl/extra/material.js';
-import { Header, Navigation, Content } from 'react-mdl';
+import { Container, Navbar, Nav} from 'react-bootstrap';
+import { Content } from 'react-mdl';
 import { Component } from 'react';
-import {Link, BrowserRouter} from 'react-router-dom';
+import {BrowserRouter} from 'react-router-dom';
 import Main from './components/main';
 class App extends Component {
   render(){
     return (
       <BrowserRouter>
       <div className="demo-big-content">
-          <Header title="Charlene Peters Portfolio">
-            <Navigation>
-              <Link to="/">Home</Link>
-              <Link to="/aboutme">About Me</Link>
-              <Link to="/projects">Projects</Link>
-              <Link to="/contact">Contact</Link>
-            </Navigation>
-          </Header>
+      <Container>
+      <Navbar bg="light" expand="lg">
+  <Navbar.Brand href="/landingpage">Charlene Peters Portfolio</Navbar.Brand>
+  <Navbar.Toggle aria-controls="basic-navbar-nav" />
+  <Navbar.Collapse id="basic-navbar-nav">
+    <Nav className="mr-auto">
+      <Nav.Link href="/landingpage">Home</Nav.Link>
+      <Nav.Link href="/aboutme">About Me</Nav.Link>
+      <Nav.Link href="/projects">Projects</Nav.Link>
+      <Nav.Link href="/contact">Contact Me</Nav.Link>
+    </Nav>
+  </Navbar.Collapse>
+</Navbar>
           <Content>
             <div className="page-content" />
             <Main />
           </Content>
+          </Container>
       </div>
       </BrowserRouter>
     );
