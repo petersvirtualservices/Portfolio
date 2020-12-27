@@ -42,3 +42,31 @@ p {
 .Navbar {
 background-color: salmon;
 }
+
+img {
+  text-align: center;
+  height: 400px;
+  width: 400px;
+  text-align: center;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.Footer {
+  text-align: center;
+  float: bottom;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.Button {
+  text-align: center;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: auto 5px
+}

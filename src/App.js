@@ -1,9 +1,10 @@
 import './assets/css/App.css';
 import { Container, Navbar, Nav} from 'react-bootstrap';
-import { Content } from 'react-mdl';
 import { Component } from 'react';
 import {BrowserRouter} from 'react-router-dom';
 import Main from './components/main';
+
+
 class App extends Component {
   render(){
     return (
@@ -22,10 +23,8 @@ class App extends Component {
     </Nav>
   </Navbar.Collapse>
 </Navbar>
-          <Content>
             <div className="page-content" />
             <Main />
-          </Content>
           </Container>
       </div>
       </BrowserRouter>
