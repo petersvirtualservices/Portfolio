@@ -15,10 +15,8 @@ class Project extends Component {
           <Card.Img className='projectImg' src={img1} />
           <Card.Body>
             <Card.Title className='projectText'>Cocktail Coterie</Card.Title>
-            <Button variant="secondary" src="https://github.com/AuroraBrune/cocktail_coterie">GitHub</Button>
-            <Button variant="secondary" src="https://cocktail-coterie.herokuapp.com/">Live Demo</Button>
             <Card.Text variant='dark'>
-              The app takes all the info you need to make an invitation convenient for your virtual party guests to come hang out!!  This was a group project, and I was responsible for the registration and login.
+            <a href="https://github.com/AuroraBrune/cocktail_coterie">GitHub</a> | <a href="https://cocktail-coterie.herokuapp.com/">Demo</a>
             </Card.Text>
 
           </Card.Body>
@@ -26,11 +24,9 @@ class Project extends Component {
         <Card>
           <Card.Img className='projectImg' src={img3} />
           <Card.Body>
-          <Card.Title className='projectText'>Timed Quiz</Card.Title>
-          <Button variant="secondary" src="https://github.com/petersvirtualservices/TimedQuiz">GitHub</Button>
-            <Button variant="secondary" src="https://petersvirtualservices.github.io/TimedQuiz/">Live Demo</Button>            
+          <Card.Title className='projectText'>Timed Quiz</Card.Title>                  
             <Card.Text>
-            This is a simple quiz to test your HTML and Javascript knowledge.  It was my first attempt at Javascript
+            <a href="https://github.com/petersvirtualservices/TimedQuiz">GitHub</a> | <a href="https://petersvirtualservices.github.io/TimedQuiz/">Demo</a>    
             </Card.Text>
           </Card.Body>
         </Card>
@@ -38,23 +34,20 @@ class Project extends Component {
           <Card.Img className='projectImg' src={img2} />
           <Card.Body>
             <Card.Title className='projectText'>Weather API</Card.Title>
-            <Button variant="secondary" src="https://github.com/petersvirtualservices/WeatherAPI">GitHub</Button>
-            <Button variant="secondary" src="https://petersvirtualservices.github.io/WeatherAPI/">Live Demo</Button>
+            
             <Card.Text>
-            This is an app that is designed to show the weather and the 5-day forecast.  This was the first assignment that allowed me to feel comfortable with Javascript.
-            </Card.Text>
+            <a href="https://github.com/petersvirtualservices/WeatherAPI">GitHub</a> | <a href="https://petersvirtualservices.github.io/WeatherAPI/">Demo</a>
+             </Card.Text>
 
           </Card.Body>
         </Card>
         <Card>
           <Card.Img className='projectImg' src={img4} />
           <Card.Body>
-            <Card.Title className='projectText'>Password Generator</Card.Title>
-            <Button variant="secondary" src="https://github.com/petersvirtualservices/PasswordCreator">GitHub</Button>
-            <Button variant="secondary" src="https://petersvirtualservices.github.io/PasswordCreator/">Live Demo</Button>
+            <Card.Title className='projectText'>Password Generator</Card.Title>            
             <Card.Text>
-            This is an app that is designed to show the weather and the 5-day forecast.  This was the first assignment that allowed me to feel comfortable with Javascript.
-            </Card.Text>
+            <a href="https://github.com/petersvirtualservices/PasswordCreator">GitHub</a> | <a href="https://petersvirtualservices.github.io/PasswordCreator/">Demo</a>
+             </Card.Text>
 
           </Card.Body>
         </Card>
