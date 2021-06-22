@@ -12,6 +12,7 @@ class AboutMe extends Component {
                 </p>
                 <p>My business, Peters Virtual Services, started with small customer-audit jobs, and has grown to become a Top-Rated-Plus account on Upwork.  That result is because I have had great clients and they have had reason to trust me with their work.  I want to help others find a similar path.  Quite honestly, I understand that the mind is a very complex puzzle, but if I can put 5 pieces of a 1000-piece puzzle together, have I not made a contribution?
                 </p>
+                <p>Thank you for visiting my page!</p>
                 <Footer />
             </div>
         )
