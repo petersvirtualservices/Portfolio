@@ -30,6 +30,7 @@
 h1 {
   color: salmon;
   font-family: 'Cormorant Garamond', serif;
+  width: 600px;
 }
 
 p {
@@ -50,8 +51,6 @@ background-color: salmon;
 
 img {
   text-align: center;
-  height: 400px;
-  width: 400px;
   text-align: center;
     display: block;
     justify-content: center;
@@ -83,4 +82,8 @@ img {
 
 .projectText {
   color: darkgray;
+}
+
+.CardDeck {
+  margin: 200px 200px 200px 200px;
 }
